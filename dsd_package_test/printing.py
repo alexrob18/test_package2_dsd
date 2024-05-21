@@ -3,19 +3,17 @@ Test code
 """
 
 
-def say_many_hello(message, nb_of_hello: int = 1):
+def say_many_hello(nb_of_hello: int = 1):
     """
+    print as many hello world as you want
 
-
-    :param message:
-    :param nb_of_hello:
+    :param nb_of_hello: int
     :return:
     """
     for _ in range(nb_of_hello):
-        print(message)
+        print("Bonjour Monde")
 
 
 if __name__ == "__main__":
 
-    message = "Bonjour Monde"
-    say_many_hello(message, 3)
+    say_many_hello(3)
